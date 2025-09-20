@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Journalist Dashboard</title>
+  </head>
+  <body>
+      <h1>Journalist - My Articles</h1>
+      {% for a in articles %}
+        <div>
+          <h2>{{ a.title }}</h2>
+          <p>{{ a.body truncatewords:30 }}</p>
+          <p><i>Status {% if a.approved %} Approved{% else %} Pending{% endif %}</i></p>
+        </div>
+      {% empty %}
+        <p>You haven't written any articles yet.</p>
+      {% endfor %}
+  </body>
+</html>
