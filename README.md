@@ -4,6 +4,7 @@ A news publishing web application built with Django, powered by Maria DB for dat
 
 Features:
 
+
 •	User authentication (journalists, editors and readers)
 
 •	Create, edit and publish articles
@@ -20,6 +21,7 @@ Features:
 
 Installation:
 
+
 1.Download all dependences from requiremtents.txt
 
 2.Clone the repository
@@ -35,6 +37,7 @@ Installation:
 7.Access the admin dashboard
 
  Usages: 
+ 
  
 -Admin panel: to manage users, publishers and articles.
 
