@@ -1,4 +1,4 @@
-#Django News Project Consolidation
+# Django News Project Consolidation
 
 A news publishing web application built with Django, powered by Maria DB for data storage, containerized with Docker and documented using Sphinx.
 
