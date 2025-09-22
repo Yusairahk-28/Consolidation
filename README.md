@@ -1,24 +1,49 @@
-# Consolidation
+#Django News Project Consolidation
+
+A news publishing web application built with Django, powered by Maria DB for data storage, containerized with Docker and documented using Sphinx.
 
 Features:
-- Custom user model with roles: Reader, Journalist and Editor.
-- Readers can view only approved articles.
-- Journalists can create and view their own articles.
-- Editors can review and approve pending articles.
-- Email notifications when articles are approved.
-- REST API endpoint for fetching approved articles.
 
-Installtion
--Install dependencies
--Activate virtual environment
--Configure envirements
--Run migrations
--Run server
+•	User authentication (journalists, editors and readers)
 
-Usages:
--Navigate:
+•	Create, edit and publish articles
+
+•	Categorizing and tagging of news
+
+•	REST API for news content
+
+•	Responsive font-end templates
+
+•	Role-based permissions
+
+•	Search and filtering functionally
+
+Installation:
+
+1.Download all dependences from requiremtents.txt
+
+2.Clone the repository
+
+3.Activate virtual environment 
+
+4.Build and start containers
+
+5.Apply database migrations
+
+6.Create superuser
+
+7.Access the admin dashboard
+
+ Usages: 
+ 
+-Admin panel: to manage users, publishers and articles.
+
+-API: returns approved articles.
+
+-Navigate: 
+
 Reader- Reader dashboard (approve articles).
-Editor - Editor dashboard (approve articles).
+
+Editor - Editor dashboard (approve articles). 
+
 Journalist - Journalist dashboard (your articles).
-- Admin panel: to manage users, publishers and articles. 
-- API: returns approved articles.
