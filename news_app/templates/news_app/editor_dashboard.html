@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Editor Dashboard</title>
+  </head>
+  <body>
+      <h1>Editor - Pending Articles</h1>
+      {% for a in articles %}
+        <div>
+          <h2>{{ a.title }}</h2>
+          <p>{{ a.body truncatewords:30 }}</p>
+          <p><i>By {{ a.journalist.username }} Publisher: {{ a.publisher.name }}</i></p>
+          <a href="{% url 'approve_article' a.pk %}">Approve</a>
+        </div>
+      {% empty %}
+        <p>No pending articles.</p>
+      {% endfor %}
+  </body>
+
+</html>
+
